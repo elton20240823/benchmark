@@ -26,7 +26,7 @@ topicConfig: |
   flush.ms=0
 
 commonConfig: |
-  bootstrap.servers=localhost:9092
+  bootstrap.servers=10.200.6.152:9092,10.200.4.23:9092,10.200.6.177:9092
 
 producerConfig: |
   acks=all
