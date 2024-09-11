@@ -30,9 +30,12 @@ package io.openmessaging.benchmark.driver.kafka;
 import io.openmessaging.benchmark.driver.BenchmarkProducer;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
+@Slf4j
 public class KafkaBenchmarkProducer implements BenchmarkProducer {
 
     private final Producer<String, byte[]> producer;
@@ -49,16 +52,20 @@ public class KafkaBenchmarkProducer implements BenchmarkProducer {
 
         CompletableFuture<Void> future = new CompletableFuture<>();
 
-        producer.send(
-                record,
-                (metadata, exception) -> {
-                    if (exception != null) {
-                        future.completeExceptionally(exception);
-                    } else {
-                        future.complete(null);
-                    }
-                });
-
+        producer.send(record, (metadata, exception) -> {
+            if (exception != null) {
+                future.completeExceptionally(exception);
+            } else {
+                future.complete(null);
+            }
+        });
+        try {
+            future.get();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        } catch (ExecutionException e) {
+            log.error("send await exception", e);
+        }
         return future;
     }
 
