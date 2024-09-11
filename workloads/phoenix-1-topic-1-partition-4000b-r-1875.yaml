@@ -17,7 +17,7 @@ name: 1 topic / 1 partition / 200b
 topics: 1
 partitionsPerTopic: 1
 keyDistributor: "NO_KEY"
-messageSize: 4000
+messageSize: 4096
 payloadFile: "payload/payload-4Kb.data"
 subscriptionsPerTopic: 1
 consumerPerSubscription: 1
