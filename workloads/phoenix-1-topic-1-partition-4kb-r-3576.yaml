@@ -18,10 +18,12 @@ topics: 1
 partitionsPerTopic: 1
 keyDistributor: "NO_KEY"
 messageSize: 4096
-payloadFile: "payload/payload-4Kb.data"
+useRandomizedPayloads: true
+randomBytesRatio: 0.5
+randomizedPayloadPoolSize: 100
 subscriptionsPerTopic: 1
 consumerPerSubscription: 1
 producersPerTopic: 1
-producerRate: 1875
+producerRate: 3576
 consumerBacklogSizeGB: 0
 testDurationMinutes: 3

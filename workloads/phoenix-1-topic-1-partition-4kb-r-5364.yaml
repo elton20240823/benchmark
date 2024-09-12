@@ -12,6 +12,18 @@
 # limitations under the License.
 #
 
-bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-4000b-r-1875.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-4000b-r-3750.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-4000b-r-5625.yaml
+name: 1 topic / 1 partition / 200b
+
+topics: 1
+partitionsPerTopic: 1
+keyDistributor: "NO_KEY"
+messageSize: 4096
+useRandomizedPayloads: true
+randomBytesRatio: 0.5
+randomizedPayloadPoolSize: 100
+subscriptionsPerTopic: 1
+consumerPerSubscription: 1
+producersPerTopic: 1
+producerRate: 5364
+consumerBacklogSizeGB: 0
+testDurationMinutes: 3
