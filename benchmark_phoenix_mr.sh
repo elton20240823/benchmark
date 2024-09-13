@@ -12,6 +12,7 @@
 # limitations under the License.
 #
 bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 workloads/phoenix-mr-1-topic-1-partition-128kb-r-800.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 workloads/phoenix-mr-1-topic-1-partition-128kb-r-600.yaml
 bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 workloads/phoenix-mr-1-topic-1-partition-32kb-r-1098.yaml
 # bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 workloads/phoenix-mr-1-topic-1-partition-32kb-r-1647.yaml
 bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 workloads/phoenix-mr-1-topic-1-partition-32kb-r-549.yaml
