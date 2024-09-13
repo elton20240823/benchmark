@@ -11,23 +11,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-32kb-r-224.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-32kb-r-448.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-32kb-r-672.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-32kb-r-894.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-4kb-r-1788.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-4kb-r-3576.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-4kb-r-5364.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-4kb-r-7152.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-8kb-r-1788.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-8kb-r-2682.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-8kb-r-3576.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-8kb-r-894.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-32kb-r-2000.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-32kb-r-2500.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-32kb-r-5000.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-48kb-r-2000.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-48kb-r-5000.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-64kb-r-5000.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-128kb-r-2000.yaml
-bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-128kb-r-5000.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-128kb-r-800.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-32kb-r-1098.yaml
+# bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-32kb-r-1647.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-32kb-r-549.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-48kb-r-1098.yaml
+# bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-48kb-r-1464.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-48kb-r-732.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-64kb-r-1098.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-64kb-r-549.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-mr.yaml --workers http://localhost:21001,http://localhost:21003 phoenix-mr-1-topic-1-partition-64kb-r-823.yaml
