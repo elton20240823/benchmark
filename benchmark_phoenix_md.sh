@@ -31,3 +31,6 @@ bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://l
 bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-64kb-r-5000.yaml
 bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-128kb-r-2000.yaml
 bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-128kb-r-5000.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-48kb-r-600.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-64kb-r-600.yaml
+bin/benchmark --drivers driver-kafka/kafka-throughput-md.yaml --workers http://localhost:21001,http://localhost:21003  workloads/phoenix-1-topic-1-partition-128kb-r-600.yaml
